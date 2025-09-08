@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -190,53 +191,7 @@
 
     <footer class="py-6 text-center text-gray-500 border-t border-gray-700">
         <p>&copy; 2025 Jogender Gahlawat. All rights reserved.</p>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-           
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-
-            const copyBtn = document.getElementById('copy-btn');
-            const emailAddress = document.getElementById('email-address');
-            const messageBox = document.getElementById('message-box');
-
-            copyBtn.addEventListener('click', () => {
-                const textToCopy = emailAddress.innerText;
-                navigator.clipboard.writeText(textToCopy).then(() => {
-                    messageBox.classList.remove('hidden');
-                    setTimeout(() => {
-                        messageBox.classList.add('hidden');
-                    }, 2000);
-                }).catch(err => {
-                    console.error('Failed to copy: ', err);
-                    
-                    
-                    const tempTextarea = document.createElement('textarea');
-                    tempTextarea.value = textToCopy;
-                    document.body.appendChild(tempTextarea);
-                    tempTextarea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(tempTextarea);
-
-                    messageBox.classList.remove('hidden');
-                    setTimeout(() => {
-                        messageBox.classList.add('hidden');
-                    }, 2000);
-                });
-            });
-        });
-    </script>
-
+     </footer>
+     <script src="app.js"></script>
 </body>
 </html>
