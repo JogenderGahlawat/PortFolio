@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Design Portfolio - Jogender Gahlawat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-bg {
+            position: relative;
+            overflow: hidden;
+            background-color: #0f172a;
+
+            background-image: radial-gradient(circle at 10% 20%, #1a273d, rgba(26, 39, 61, 0) 75%),
+                              radial-gradient(circle at 90% 80%, #6f42c1, rgba(111, 66, 193, 0) 75%),
+                              radial-gradient(circle at 50% 0%, #0c7468, rgba(12, 116, 104, 0) 75%);
+            background-size: 200% 200%;
+            animation: gradient-shift 18s ease-in-out infinite alternate; 
+        }
+        
+        @keyframes gradient-shift {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); 
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <header class="py-6 border-b border-gray-700 sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-400">Jogender Gahlawat</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#portfolio" class="hover:text-teal-400 transition duration-300">Portfolio</a>
+                <a href="#about" class="hover:text-teal-400 transition duration-300">About Me</a>
+                <a href="#contact" class="hover:text-teal-400 transition duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-btn" class="text-gray-200 md:hidden focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-4 px-4 text-center border-b border-gray-700">
+        <a href="#portfolio" class="block py-2 hover:text-teal-400 transition duration-300">Portfolio</a>
+        <a href="#about" class="block py-2 hover:text-teal-400 transition duration-300">About Me</a>
+        <a href="#contact" class="block py-2 hover:text-teal-400 transition duration-300">Contact</a>
+    </div>
+
+    <section class="py-32 text-center hero-bg relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4 fade-in-up text-shadow" style="animation-delay: 0.2s;">
+                Crafting Visual Identities. <br class="hidden sm:inline">Making Brands Memorable.
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-8 fade-in-up text-shadow" style="animation-delay: 0.4s;">
+                I am a logo designer focused on creating minimalist and memorable brand stories that resonate with your audience.
+            </p>
+            <div class="flex justify-center space-x-4 fade-in-up" style="animation-delay: 0.6s;">
+                <a href="#portfolio" class="bg-teal-500 hover:bg-teal-600 transition-colors duration-300 text-white font-bold py-3 px-8 rounded-full shadow-lg">
+                    View My Work
+                </a>
+                <a href="#contact" class="border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition-colors duration-300 font-bold py-3 px-8 rounded-full shadow-lg">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">My Selected Works</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 group">
+                    <div class="bg-gradient-to-br from-teal-400 to-purple-500 rounded-lg mb-6 overflow-hidden aspect-square p-8">
+                        <img src="images/BookMyTour.jpg" alt="TechNova Solutions Logo" class="w-full h-full object-contain group-hover:scale-110 transition duration-500 ease-in-out">
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Book My Tour</h3>
+                    <p class="text-gray-400">Minimalist logo for a tech startup, representing innovation and forward movement.</p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 group">
+                    <div class="bg-gradient-to-br from-green-400 to-blue-500 rounded-lg mb-6 overflow-hidden aspect-square p-8">
+                        <img src="images/convert uploaded ima.png" alt="EcoVerse Logo" class="w-full h-full object-contain group-hover:scale-110 transition duration-500 ease-in-out">
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Dot&Key</h3>
+                    <p class="text-gray-400">A clean and modern logo for an eco-friendly brand, combining nature elements with a professional look.</p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 group">
+                    <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg mb-6 overflow-hidden aspect-square p-8">
+                        <img src="images/add _Hut_ text to th.png" alt="Coffee House Hub Logo" class="w-full h-full object-contain group-hover:scale-110 transition duration-500 ease-in-out">
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Coffee House Hub</h3>
+                    <p class="text-gray-400">Hand-drawn style logo for a local coffee shop, creating a warm and inviting feel.</p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 group">
+                    <div class="bg-gradient-to-br from-red-400 to-pink-500 rounded-lg mb-6 overflow-hidden aspect-square p-8">
+                        <img src="images/BeautyLine .png" alt="AeroFit Logo" class="w-full h-full object-contain group-hover:scale-110 transition duration-500 ease-in-out">
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">BeautY Line</h3>
+                    <p class="text-gray-400">Dynamic logo for a Beauty brand, reflecting shining and body shape through clean lines.</p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 group">
+                    <div class="bg-gradient-to-br from-indigo-400 to-purple-500 rounded-lg mb-6 overflow-hidden aspect-square p-8">
+                        <img src="images/fusion food.png" alt="Fusion Foods Logo" class="w-full h-full object-contain group-hover:scale-110 transition duration-500 ease-in-out">
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Fusion Foods</h3>
+                    <p class="text-gray-400">Bold and vibrant logo for a food delivery service, representing a blend of different cuisines.</p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 group">
+                    <div class="bg-gradient-to-br from-blue-400 to-gray-500 rounded-lg mb-6 overflow-hidden aspect-square p-8">
+                        <img src="https://placehold.co/400x400/1f2937/d1d5db?text=Artisanal+Goods" alt="Artisanal Goods Co. Logo" class="w-full h-full object-contain group-hover:scale-110 transition duration-500 ease-in-out">
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Artisanal Goods Co.</h3>
+                    <p class="text-gray-400">Classic, elegant logo for a handcrafted goods company, conveying quality and tradition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4 text-center md:flex md:items-center md:text-left md:space-x-12">
+            <div class="mb-8 md:mb-0 md:w-1/3">
+                <img src="https://placehold.co/400x400/1f2937/d1d5db?text=Your+Photo" alt="Jogender Gahlawat" class="rounded-full mx-auto md:mx-0 w-48 h-48 object-cover border-4 border-teal-500 shadow-lg animate-pulse-slow">
+            </div>
+            <div class="md:w-2/3">
+                <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                    Hello, I'm Jogender Gahlawat, a passionate logo designer based in India. My work focuses on creating simple, yet powerful logos that help brands stand out. I believe a good logo is more than just a symbol; it's the heart of a brand's story.
+                </p>
+                <p class="text-gray-400 leading-relaxed">
+                    With a keen eye for detail and a love for typography, I create custom solutions that are timeless and effective. Let's work together to build something remarkable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get in Touch</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+                Ready to create your brand's identity? Feel free to reach out to me via email or social media.
+            </p>
+            <div class="flex flex-col items-center space-y-4">
+              
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-4">
+               <button style="font-size: 28px;  padding: 6px 16px; border-radius:28px;">For Work :&nbsp;</button>
+               </div>
+                    <i class="fas fa-envelope text-teal-400 text-2xl"></i>
+                    <span id="email-address" class="text-lg text-gray-200"><a href="mailto: Jogendergahlawat777@gmail.com">Jogendergahlawat777@gmail.com</a></span>
+                    <button id="copy-btn" class="bg-gray-700 hover:bg-gray-600 transition-colors duration-300 text-gray-200 px-3 py-1 rounded-md text-sm">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="flex space-x-6 text-3xl mt-6"> <a href="#" class="hover:text-teal-400 transition duration-300 transform hover:scale-110"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="hover:text-teal-400 transition duration-300 transform hover:scale-110"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://www.instagram.com/code_with_darkmode?igsh=anZ0dGlhb3dnYWF6" class="hover:text-teal-400 transition duration-300 transform hover:scale-110"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jogender-gahlawat-18019b375/" target="_blank" class="hover:text-teal-400 transition duration-300 transform hover:scale-110"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/JogenderGahlawat" target="_blank" class="hover:text-teal-400 transition duration-300 transform hover:scale-110"><i class="fab fa-github"></i></a>     </div>
+            </div>
+            <div id="message-box" class="mt-4 p-3 rounded-lg bg-green-500 text-white hidden">Email copied!</div>
+        </div>
+    </section>
+
+    <footer class="py-6 text-center text-gray-500 border-t border-gray-700">
+        <p>&copy; 2025 Jogender Gahlawat. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+           
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            const copyBtn = document.getElementById('copy-btn');
+            const emailAddress = document.getElementById('email-address');
+            const messageBox = document.getElementById('message-box');
+
+            copyBtn.addEventListener('click', () => {
+                const textToCopy = emailAddress.innerText;
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    messageBox.classList.remove('hidden');
+                    setTimeout(() => {
+                        messageBox.classList.add('hidden');
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                    
+                    
+                    const tempTextarea = document.createElement('textarea');
+                    tempTextarea.value = textToCopy;
+                    document.body.appendChild(tempTextarea);
+                    tempTextarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempTextarea);
+
+                    messageBox.classList.remove('hidden');
+                    setTimeout(() => {
+                        messageBox.classList.add('hidden');
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
