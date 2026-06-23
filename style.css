@@ -317,3 +317,82 @@ a{text-decoration:none;color:inherit}
   .t5{bottom:95px;left:0}
 
 }
+/* FINAL MOBILE FIX */
+@media(max-width:760px){
+
+  .hero{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    min-height:auto;
+    padding-top:35px;
+    overflow:hidden;
+  }
+
+  .hero-content{
+    order:1;
+    width:100%;
+    z-index:5;
+  }
+
+  .hero-visual{
+    order:2;
+    width:100%;
+    min-height:340px;
+    margin-top:10px;
+    overflow:hidden;
+  }
+
+  .profile-card{
+    width:240px !important;
+    height:240px !important;
+    border-radius:50% !important;
+    overflow:hidden;
+  }
+
+  .profile-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+  }
+
+  .orb-ring{
+    width:300px !important;
+    height:300px !important;
+  }
+
+  .tech{
+    display:none !important;
+  }
+
+  .hero h1{
+    font-size:48px;
+    line-height:1.05;
+  }
+
+  .hero h2{
+    font-size:24px;
+  }
+
+  .hero-text{
+    font-size:15px;
+  }
+
+  .hero-actions{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .btn{
+    width:100%;
+    justify-content:center;
+    margin-right:0;
+  }
+
+  .socials a{
+    color:#fff;
+    font-size:18px;
+  }
+}
