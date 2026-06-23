@@ -286,3 +286,34 @@ a{text-decoration:none;color:inherit}
   .cta h2{font-size:30px}
   .footer{margin-bottom:55px}
 }
+@media(max-width:760px){
+
+  .hero-visual{
+    min-height:420px;
+    overflow:visible;
+  }
+
+  .profile-card{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+  }
+
+  .orb-ring{
+    width:320px;
+    height:320px;
+  }
+
+  .tech{
+    font-size:12px;
+    padding:10px 13px;
+    z-index:4;
+  }
+
+  .t1{top:10px;left:50%;transform:translateX(-50%)}
+  .t2{top:95px;right:0}
+  .t3{top:95px;left:0}
+  .t4{bottom:95px;right:0}
+  .t5{bottom:95px;left:0}
+
+}
